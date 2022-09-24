@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+:root{
+    --red-400:  #e74c3c;
+    --green-400: #5f9341;
+    --green-300: #6f9961;
+    --white-900: #fff; 
+
+    --fs: 16px;
+    --fw-400: 400;
+    --fw-800: 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 600px;
+    width: 100%;
+    font-family: 'Inter', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-el{
+    margin-block: 30px;
+    padding: 6px 10px;
+    border: var(--green-400) 2px solid;
+    outline: none;
+}
+
+.btn-box{
+    display: flex;
+    gap: 20px;
+}
+
+.normal-btn{
+    width: 120px;
+    padding: 8px 15px;
+    border: 2px solid var(--green-400);
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    background-color: var(--green-400);
+    color: var(--white-900);
+
+    text-transform: uppercase;
+    font-weight: var(--fw-800);
+}
+
+#delete-btn, #input-btn:hover{
+    border: 2px solid var(--green-400);
+    background-color: var(--white-900);
+    color: var(--green-400);
+    transition: 0.2s;
+}
+
+#tab-btn{
+    border: 2px solid #ccc;
+    color: #777;
+    background-color: #CCC;
+    cursor: auto;
+}
+
+#delete-btn{
+    color: var(--red-400);
+    border-color: var(--red-400);
+}
+
+#delete-btn:hover{
+    border: 2px solid var(--red-400);
+    background-color: var(--red-400);
+    color: var(--white-900);
+    transition: 0.2s;
+}
+
+#un-list{
+    margin-block: 10px;
+    padding: 10px;
+}
+
+li{
+    margin-block: 5px;
+    list-style: none;
+}
+
+li a{
+    color: var(--green-400);
+}
+
+a:hover{
+    color: black;
+    transition: 0.1s linear;
+}
